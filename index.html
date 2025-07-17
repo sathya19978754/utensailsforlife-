@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utensils For Life - Quality Kitchen Utensils</title>
+    <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header-section bg-white py-3">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <div class="logo-circle me-3">
+                        <svg width="80" height="80" viewBox="0 0 80 80" class="brand-logo">
+                            <circle cx="40" cy="40" r="38" fill="#8B6914" stroke="#654C0A" stroke-width="2"/>
+                            <circle cx="40" cy="40" r="30" fill="#F5F5F5"/>
+                            <!-- Utensils around the circle -->
+                            <g class="utensils-group">
+                                <!-- Fork -->
+                                <path d="M40 15 L40 25 M37 15 L37 22 M43 15 L43 22" stroke="#8B6914" stroke-width="1.5" fill="none"/>
+                                <!-- Spoon -->
+                                <ellipse cx="53" cy="25" rx="3" ry="5" fill="#8B6914" transform="rotate(45 53 25)"/>
+                                <line x1="56" y1="28" x2="62" y2="34" stroke="#8B6914" stroke-width="1.5"/>
+                                <!-- Knife -->
+                                <path d="M25 53 L35 43 L32 40 L22 50 Z" fill="#8B6914"/>
+                                <!-- Spatula -->
+                                <rect x="45" y="52" width="8" height="3" rx="1" fill="#8B6914" transform="rotate(-45 49 53.5)"/>
+                                <line x1="52" y1="49" x2="58" y2="43" stroke="#8B6914" stroke-width="1.5"/>
+                                <!-- Ladle -->
+                                <circle cx="27" cy="27" r="4" fill="none" stroke="#8B6914" stroke-width="1.5"/>
+                                <line x1="30" y1="30" x2="35" y2="35" stroke="#8B6914" stroke-width="1.5"/>
+                            </g>
+                            <!-- Center text -->
+                            <text x="40" y="35" text-anchor="middle" class="logo-text-small" fill="#8B6914">Utensil Eat</text>
+                            <text x="40" y="45" text-anchor="middle" class="logo-text-small" fill="#8B6914">4</text>
+                            <text x="40" y="55" text-anchor="middle" class="logo-text-small" fill="#8B6914">YOU</text>
+                        </svg>
+                    </div>
+                    <h1 class="brand-title mb-0">UTENSILS FOR LIFE</h1>
+                </a>
+                
+                <div class="ms-auto d-flex align-items-center">
+                    <div class="search-container me-4">
+                        <div class="input-group">
+                            <input type="text" class="form-control search-input" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-secondary search-btn" type="button">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="header-icons d-flex align-items-center">
+                        <button class="btn btn-link text-dark me-3 header-icon" data-bs-toggle="modal" data-bs-target="#cartModal">
+                            <i class="fas fa-shopping-cart fa-lg"></i>
+                        </button>
+                        <button class="btn btn-link text-dark header-icon" data-bs-toggle="modal" data-bs-target="#loginModal">
+                            <i class="fas fa-user fa-lg"></i>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+            
+            <!-- Navigation Menu -->
+            <nav class="main-navigation mt-3">
+                <ul class="nav justify-content-center nav-menu">
+                    <li class="nav-item">
+                        <a class="nav-link active text-dark fw-bold" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark fw-bold" href="products.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark fw-bold" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark fw-bold" href="contact.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark fw-bold" href="faq.html">FAQ's</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section" style="background: linear-gradient(135deg, #E8F4F8 0%, #D6EDF6 50%, #C4E6F4 100%); min-height: 600px;">
+        <div class="container">
+            <div class="row align-items-center h-100" style="min-height: 600px;">
+                <div class="col-lg-6">
+                    <div class="hero-image">
+                        <img src="img/Daily-Use Utensils & Steel items Images/KOGBEL Cooking Wooden Spoon, 6 Natural Acacia Wooden Cookware Or Kitchen Essentials Non-Stick Wooden Cookware Set _ 12_ L _ Way….jpg" alt="Kitchen Utensils" class="img-fluid" style="max-width: 100%; height: auto;">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-content text-end pe-5">
+                        <h1 class="hero-title mb-4" style="font-size: 3rem; font-weight: 700; color: #4A73A6; line-height: 1.2;">
+                            A Leading<br>
+                            Manufacturer & Wholesale<br>
+                            Exporter
+                        </h1>
+                        <div class="hero-buttons mt-4">
+                            <a href="products.html" class="btn btn-custom btn-lg px-5 py-3" style="background: #4A73A6; color: white; border-radius: 25px; font-weight: 600;">
+                                Explore Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promotional Section -->
+    <section class="promo-section py-5" style="background: linear-gradient(135deg, #E8F4F8 0%, #D6EDF6 100%);">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-6 mb-4">
+                    <div class="promo-card p-4" style="background: white; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <h3 class="text-warning fw-bold mb-3">Combo Packs for Resale</h3>
+                                <p class="text-dark mb-3">Special Combo Deals on high-demand items: Cookware sets, utensils, and kitchen tools</p>
+                                <p class="text-danger mb-3"><strong>Extra 10% margin on select SKUs this month only!</strong></p>
+                                <button class="btn btn-primary">Select your Items</button>
+                            </div>
+                            <div class="col-md-6 text-center">
+                                <img src="images/products/5pcs Silicone Cooking Utensil Set.jpg" alt="Kitchen Tools" class="img-fluid" style="max-height: 150px; object-fit: contain;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <div class="promo-card p-4" style="background: white; border-radius: 15px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <h3 class="text-warning fw-bold mb-3">First Wholesale Order Deal</h3>
+                                <p class="text-dark mb-3">Flat ₹1000 OFF on your first wholesale order (min. purchase ₹10,000)</p>
+                                <div class="mt-3">
+                                    <span class="badge bg-primary px-3 py-2">Use Code: BULK1000</span>
+                                </div>
+                            </div>
+                            <div class="col-md-6 text-center">
+                                <img src="images/products/3-Piece Stainless Steel Frying Pan Set.jpg" alt="Cookware Set" class="img-fluid" style="max-height: 150px; object-fit: contain;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="content-section">
+                        <h2 class="mb-4" style="font-size: 2.5rem; font-weight: 700; color: #2C3E50;">
+                            Custom and Wholesale with Good Price & Service
+                        </h2>
+                        <p class="mb-4" style="font-size: 1.1rem; color: #555;">
+                            We are a professional utensils manufacturer, the main products include, wooden utensils, bamboo utensils, stainless steel utensils, silicone utensils with good price, there are more than 500 styles, and the products are updated every year.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="image-section text-center">
+                        <img src="img/Daily-Use Utensils & Steel items Images/E-far Silicone Cooking Utensils Set, 7 Pcs Heat Resistant Kitchen Utensils With.jpg" alt="Kitchen Scene" class="img-fluid" style="max-width: 100%; height: auto;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h3>Stay Updated</h3>
+                    <p>Subscribe to our newsletter for latest products and offers</p>
+                </div>
+                <div class="col-lg-6">
+                    <form class="newsletter-form">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Enter your email">
+                            <button class="btn btn-primary" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Team Section -->
+    <section class="team-section py-5 bg-light">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h2>Our Team</h2>
+                <p>Meet the passionate people behind Utensalis For Life</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="team-card text-center">
+                        <div class="team-image">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face" alt="John Smith" class="img-fluid rounded-circle">
+                        </div>
+                        <div class="team-info">
+                            <h5>John Smith</h5>
+                            <p class="text-muted">CEO & Founder</p>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="team-card text-center">
+                        <div class="team-image">
+                            <img src="img/download.jpg" alt="Sarah Johnson" class="img-fluid rounded-circle">
+                        </div>
+                        <div class="team-info">
+                            <h5>Sarah Johnson</h5>
+                            <p class="text-muted">Head of Design</p>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-dribbble"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="team-card text-center">
+                        <div class="team-image">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop&crop=face" alt="Michael Chen" class="img-fluid rounded-circle">
+                        </div>
+                        <div class="team-info">
+                            <h5>Michael Chen</h5>
+                            <p class="text-muted">Quality Manager</p>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="team-card text-center">
+                        <div class="team-image">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=300&fit=crop&crop=face" alt="Emma Wilson" class="img-fluid rounded-circle">
+                        </div>
+                        <div class="team-info">
+                            <h5>Emma Wilson</h5>
+                            <p class="text-muted">Customer Success</p>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-linkedin"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <footer class="footer-section">
+    <div class="container">
+        <div class="row">
+            <!-- Logo & Description -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="footer-widget">
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="img/logo.png" alt="Logo" style="height: 50px; width: 50px; border-radius: 50%; object-fit: cover; margin-right: 10px;">
+                        <h5 class="mb-0">Utensalis For Life</h5>
+                    </div>
+                    <p>Your trusted partner for premium kitchen utensils and cookware. Quality that lasts a lifetime.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-lg-2 col-md-6 mb-4">
+                <div class="footer-widget">
+                    <h5>Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Categories -->
+            <div class="col-lg-2 col-md-6 mb-4">
+                <div class="footer-widget">
+                    <h5>Categories</h5>
+                    <ul class="footer-links">
+                        <li><a href="products.html?category=utensils">Kitchen Utensils</a></li>
+                        <li><a href="products.html?category=cookware">Steel Cookware</a></li>
+                        <li><a href="products.html?category=accessories">Accessories</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Support -->
+            <div class="col-lg-2 col-md-6 mb-4">
+                <div class="footer-widget">
+                    <h5>Support</h5>
+                    <ul class="footer-links">
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Warranty</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="col-lg-2 col-md-6 mb-4">
+                <div class="footer-widget">
+                    <h5>Contact Info</h5>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@utensilsforlife.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Kitchen St, Cookville</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="footer-bottom text-center">
+            <p>&copy; 2025 Utensalis For Life. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Login / Register</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <ul class="nav nav-tabs" id="authTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#login" type="button">Login</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#register" type="button">Register</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content mt-3">
+                        <div class="tab-pane fade show active" id="login">
+                            <form id="loginForm">
+                                <div class="mb-3">
+                                    <label for="loginEmail" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="loginEmail" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="loginPassword" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="loginPassword" required>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">Login</button>
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="register">
+                            <form id="registerForm">
+                                <div class="mb-3">
+                                    <label for="registerName" class="form-label">Full Name</label>
+                                    <input type="text" class="form-control" id="registerName" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="registerEmail" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="registerEmail" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="registerPassword" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="registerPassword" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="confirmPassword" class="form-label">Confirm Password</label>
+                                    <input type="password" class="form-control" id="confirmPassword" required>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">Register</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Modal -->
+    <div class="modal fade" id="cartModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Shopping Cart</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body" id="cartModalBody">
+                    <!-- Cart items will be loaded by JavaScript -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Continue Shopping</button>
+                    <a href="checkout.html" class="btn btn-primary">Proceed to Checkout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Utensalis For Life</title>
+    <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <!-- Header -->
+<header class="header-section bg-white py-3">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <div class="logo-circle me-3">
+                    <svg width="80" height="80" viewBox="0 0 80 80" class="brand-logo">
+                        <circle cx="40" cy="40" r="38" fill="#8B6914" stroke="#654C0A" stroke-width="2"/>
+                        <circle cx="40" cy="40" r="30" fill="#F5F5F5"/>
+                        <!-- Utensils -->
+                        <g class="utensils-group">
+                            <path d="M40 15 L40 25 M37 15 L37 22 M43 15 L43 22" stroke="#8B6914" stroke-width="1.5" fill="none"/>
+                            <ellipse cx="53" cy="25" rx="3" ry="5" fill="#8B6914" transform="rotate(45 53 25)"/>
+                            <line x1="56" y1="28" x2="62" y2="34" stroke="#8B6914" stroke-width="1.5"/>
+                            <path d="M25 53 L35 43 L32 40 L22 50 Z" fill="#8B6914"/>
+                            <rect x="45" y="52" width="8" height="3" rx="1" fill="#8B6914" transform="rotate(-45 49 53.5)"/>
+                            <line x1="52" y1="49" x2="58" y2="43" stroke="#8B6914" stroke-width="1.5"/>
+                            <circle cx="27" cy="27" r="4" fill="none" stroke="#8B6914" stroke-width="1.5"/>
+                            <line x1="30" y1="30" x2="35" y2="35" stroke="#8B6914" stroke-width="1.5"/>
+                        </g>
+                        <text x="40" y="35" text-anchor="middle" fill="#8B6914">Utensil Eat</text>
+                        <text x="40" y="45" text-anchor="middle" fill="#8B6914">4</text>
+                        <text x="40" y="55" text-anchor="middle" fill="#8B6914">YOU</text>
+                    </svg>
+                </div>
+                <h1 class="brand-title mb-0">UTENSILS FOR LIFE</h1>
+            </a>
+
+            <div class="ms-auto d-flex align-items-center">
+                <div class="search-container me-4">
+                    <div class="input-group">
+                        <input type="text" class="form-control search-input" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-secondary search-btn" type="button">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="header-icons d-flex align-items-center">
+                    <button class="btn btn-link text-dark me-3 header-icon" data-bs-toggle="modal" data-bs-target="#cartModal">
+                        <i class="fas fa-shopping-cart fa-lg"></i>
+                    </button>
+                    <button class="btn btn-link text-dark header-icon" data-bs-toggle="modal" data-bs-target="#loginModal">
+                        <i class="fas fa-user fa-lg"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Navigation Menu -->
+        <nav class="main-navigation mt-3">
+            <ul class="nav justify-content-center nav-menu">
+                <li class="nav-item">
+                    <a class="nav-link text-dark fw-bold" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark fw-bold" href="products.html">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark fw-bold" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark fw-bold" href="contact.html">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark fw-bold" href="faq.html">FAQ's</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1>Frequently Asked Questions</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">FAQ</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section py-5">
+        <div class="container">
+            <div class="row">
+                <!-- FAQ Categories -->
+                <div class="col-lg-3 mb-4">
+                    <div class="faq-categories">
+                        <h4>Categories</h4>
+                        <ul class="category-list">
+                            <li><a href="#" class="category-link active" data-category="all">All Questions</a></li>
+                            <li><a href="#" class="category-link" data-category="orders">Orders & Shipping</a></li>
+                            <li><a href="#" class="category-link" data-category="products">Products</a></li>
+                            <li><a href="#" class="category-link" data-category="warranty">Warranty & Returns</a></li>
+                            <li><a href="#" class="category-link" data-category="payment">Payment & Pricing</a></li>
+                            <li><a href="#" class="category-link" data-category="account">Account & Profile</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- FAQ Content -->
+                <div class="col-lg-9">
+                    <div class="faq-content">
+                        <!-- Orders & Shipping -->
+                        <div class="faq-category" data-category="orders">
+                            <h3>Orders & Shipping</h3>
+                            <div class="accordion" id="ordersAccordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#orders1">
+                                            How long does shipping take?
+                                        </button>
+                                    </h2>
+                                    <div id="orders1" class="accordion-collapse collapse show" data-bs-parent="#ordersAccordion">
+                                        <div class="accordion-body">
+                                            Standard shipping typically takes 3-7 business days within the continental US. Express shipping options are available for 1-2 day delivery. International shipping times vary by location but generally take 7-14 business days.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#orders2">
+                                            Do you offer free shipping?
+                                        </button>
+                                    </h2>
+                                    <div id="orders2" class="accordion-collapse collapse" data-bs-parent="#ordersAccordion">
+                                        <div class="accordion-body">
+                                            Yes! We offer free standard shipping on all orders over $50 within the continental United States. For orders under $50, standard shipping is $5.99.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#orders3">
+                                            Can I track my order?
+                                        </button>
+                                    </h2>
+                                    <div id="orders3" class="accordion-collapse collapse" data-bs-parent="#ordersAccordion">
+                                        <div class="accordion-body">
+                                            Absolutely! Once your order ships, you'll receive a tracking number via email. You can also track your order by logging into your account on our website.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Products -->
+                        <div class="faq-category" data-category="products">
+                            <h3>Products</h3>
+                            <div class="accordion" id="productsAccordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#products1">
+                                            Are your products dishwasher safe?
+                                        </button>
+                                    </h2>
+                                    <div id="products1" class="accordion-collapse collapse" data-bs-parent="#productsAccordion">
+                                        <div class="accordion-body">
+                                            Most of our stainless steel products are dishwasher safe. However, we recommend hand washing for wooden handles and certain specialty items. Check the product description for specific care instructions.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#products2">
+                                            What materials are used in your products?
+                                        </button>
+                                    </h2>
+                                    <div id="products2" class="accordion-collapse collapse" data-bs-parent="#productsAccordion">
+                                        <div class="accordion-body">
+                                            We use only premium materials including 18/10 stainless steel, food-grade silicone, hardwood, and BPA-free plastics. All materials are food-safe and meet the highest quality standards.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#products3">
+                                            Do you have sets available?
+                                        </button>
+                                    </h2>
+                                    <div id="products3" class="accordion-collapse collapse" data-bs-parent="#productsAccordion">
+                                        <div class="accordion-body">
+                                            Yes! We offer various sets including starter sets, complete cookware sets, and utensil sets. Sets are a great way to save money and ensure all your pieces match perfectly.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Warranty & Returns -->
+                        <div class="faq-category" data-category="warranty">
+                            <h3>Warranty & Returns</h3>
+                            <div class="accordion" id="warrantyAccordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#warranty1">
+                                            What is your return policy?
+                                        </button>
+                                    </h2>
+                                    <div id="warranty1" class="accordion-collapse collapse" data-bs-parent="#warrantyAccordion">
+                                        <div class="accordion-body">
+                                            We offer a 30-day return policy for unused items in original packaging. Items must be in new condition. Custom or personalized items cannot be returned unless defective.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#warranty2">
+                                            Do you offer a warranty?
+                                        </button>
+                                    </h2>
+                                    <div id="warranty2" class="accordion-collapse collapse" data-bs-parent="#warrantyAccordion">
+                                        <div class="accordion-body">
+                                            Yes! All our products come with a lifetime warranty against manufacturing defects. This covers materials and workmanship but not normal wear and tear or misuse.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#warranty3">
+                                            How do I make a warranty claim?
+                                        </button>
+                                    </h2>
+                                    <div id="warranty3" class="accordion-collapse collapse" data-bs-parent="#warrantyAccordion">
+                                        <div class="accordion-body">
+                                            Contact our customer service team with your order number and photos of the defective item. We'll review your claim and provide a replacement or repair as needed.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Payment & Pricing -->
+                        <div class="faq-category" data-category="payment">
+                            <h3>Payment & Pricing</h3>
+                            <div class="accordion" id="paymentAccordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#payment1">
+                                            What payment methods do you accept?
+                                        </button>
+                                    </h2>
+                                    <div id="payment1" class="accordion-collapse collapse" data-bs-parent="#paymentAccordion">
+                                        <div class="accordion-body">
+                                            We accept all major credit cards (Visa, MasterCard, American Express, Discover), PayPal, Apple Pay, and Google Pay. All payments are processed securely.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#payment2">
+                                            Do you offer financing options?
+                                        </button>
+                                    </h2>
+                                    <div id="payment2" class="accordion-collapse collapse" data-bs-parent="#paymentAccordion">
+                                        <div class="accordion-body">
+                                            Yes! We partner with Affirm to offer financing options for purchases over $100. You can split your purchase into monthly payments with competitive rates.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#payment3">
+                                            Are prices listed in USD?
+                                        </button>
+                                    </h2>
+                                    <div id="payment3" class="accordion-collapse collapse" data-bs-parent="#paymentAccordion">
+                                        <div class="accordion-body">
+                                            Yes, all prices are listed in US Dollars (USD). For international customers, your bank will convert the amount to your local currency at checkout.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Account & Profile -->
+                        <div class="faq-category" data-category="account">
+                            <h3>Account & Profile</h3>
+                            <div class="accordion" id="accountAccordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#account1">
+                                            Do I need an account to place an order?
+                                        </button>
+                                    </h2>
+                                    <div id="account1" class="accordion-collapse collapse" data-bs-parent="#accountAccordion">
+                                        <div class="accordion-body">
+                                            No, you can checkout as a guest. However, creating an account allows you to track orders, save addresses, view order history, and receive exclusive offers.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#account2">
+                                            How do I reset my password?
+                                        </button>
+                                    </h2>
+                                    <div id="account2" class="accordion-collapse collapse" data-bs-parent="#accountAccordion">
+                                        <div class="accordion-body">
+                                            Click "Forgot Password" on the login page and enter your email address. We'll send you a link to reset your password. The link expires after 24 hours for security.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#account3">
+                                            Can I change my email address?
+                                        </button>
+                                    </h2>
+                                    <div id="account3" class="accordion-collapse collapse" data-bs-parent="#accountAccordion">
+                                        <div class="accordion-body">
+                                            Yes, you can update your email address in your account settings. You'll need to verify the new email address before the change takes effect.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact CTA -->
+    <section class="contact-cta py-5 bg-light">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-12">
+                    <h3>Still Have Questions?</h3>
+                    <p class="mb-4">Can't find what you're looking for? Our customer service team is here to help!</p>
+                    <div class="cta-buttons">
+                        <a href="contact.html" class="btn btn-primary btn-lg me-3">Contact Us</a>
+                        <a href="tel:+15551234567" class="btn btn-outline-primary btn-lg">
+                            <i class="fas fa-phone me-2"></i>Call Us
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+   <footer class="footer-section">
+    <div class="container">
+        <div class="row">
+            <!-- Logo & Description -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="footer-widget">
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="img/logo.png" alt="Logo" style="height: 50px; width: 50px; border-radius: 50%; object-fit: cover; margin-right: 10px;">
+                        <h5 class="mb-0">Utensalis For Life</h5>
+                    </div>
+                    <p>Your trusted partner for premium kitchen utensils and cookware. Quality that lasts a lifetime.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-lg-2 col-md-6 mb-4">
+                <div class="footer-widget">
+                    <h5>Quick Links</h5>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Categories -->
+            <div class="col-lg-2 col-md-6 mb-4">
+                <div class="footer-widget">
+                    <h5>Categories</h5>
+                    <ul class="footer-links">
+                        <li><a href="products.html?category=utensils">Kitchen Utensils</a></li>
+                        <li><a href="products.html?category=cookware">Steel Cookware</a></li>
+                        <li><a href="products.html?category=accessories">Accessories</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Support -->
+            <div class="col-lg-2 col-md-6 mb-4">
+                <div class="footer-widget">
+                    <h5>Support</h5>
+                    <ul class="footer-links">
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Warranty</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="col-lg-2 col-md-6 mb-4">
+                <div class="footer-widget">
+                    <h5>Contact Info</h5>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@utensilsforlife.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Kitchen St, Cookville</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="footer-bottom text-center">
+            <p>&copy; 2025 Utensalis For Life. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Login / Register</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <ul class="nav nav-tabs" id="authTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#login" type="button">Login</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#register" type="button">Register</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content mt-3">
+                        <div class="tab-pane fade show active" id="login">
+                            <form id="loginForm">
+                                <div class="mb-3">
+                                    <label for="loginEmail" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="loginEmail" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="loginPassword" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="loginPassword" required>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">Login</button>
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="register">
+                            <form id="registerForm">
+                                <div class="mb-3">
+                                    <label for="registerName" class="form-label">Full Name</label>
+                                    <input type="text" class="form-control" id="registerName" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="registerEmail" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="registerEmail" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="registerPassword" class="form-label">Password</label>
+                                    <input type="password" class="form-control" id="registerPassword" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="confirmPassword" class="form-label">Confirm Password</label>
+                                    <input type="password" class="form-control" id="confirmPassword" required>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">Register</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Modal -->
+    <div class="modal fade" id="cartModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Shopping Cart</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body" id="cartModalBody">
+                    <!-- Cart items will be loaded by JavaScript -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Continue Shopping</button>
+                    <a href="checkout.html" class="btn btn-primary">Proceed to Checkout</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>

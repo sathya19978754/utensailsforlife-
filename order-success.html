@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation - Utensalis For Life</title>
+    <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header-section">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.svg" alt="Utensalis For Life" height="50">
+                    <span class="brand-text">Utensalis For Life</span>
+                </a>
+                
+                <div class="checkout-progress ms-auto">
+                    <div class="progress-steps">
+                        <div class="step completed">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span>Cart</span>
+                        </div>
+                        <div class="step completed">
+                            <i class="fas fa-credit-card"></i>
+                            <span>Checkout</span>
+                        </div>
+                        <div class="step completed">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Complete</span>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Success Section -->
+    <section class="order-success-section py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <!-- Success Message -->
+                    <div class="success-card text-center mb-5">
+                        <div class="success-icon">
+                            <i class="fas fa-check-circle text-success"></i>
+                        </div>
+                        <h1 class="success-title">Order Placed Successfully!</h1>
+                        <p class="success-message">Thank you for your purchase. Your order has been confirmed and will be processed shortly.</p>
+                        
+                        <div class="order-info">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="info-item">
+                                        <strong>Order Number:</strong>
+                                        <span id="orderNumber">#UT-2025-001234</span>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="info-item">
+                                        <strong>Order Date:</strong>
+                                        <span id="orderDate">January 15, 2025</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Order Details -->
+                    <div class="order-details-card mb-4">
+                        <h3>Order Details</h3>
+                        <div class="order-items" id="orderItemsList">
+                            <!-- Order items will be loaded by JavaScript -->
+                        </div>
+                        
+                        <div class="order-summary mt-4">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="summary-section">
+                                        <h5>Shipping Address</h5>
+                                        <div id="shippingAddress">
+                                            <!-- Shipping address will be loaded by JavaScript -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="summary-section">
+                                        <h5>Payment Method</h5>
+                                        <div id="paymentMethod">
+                                            <!-- Payment method will be loaded by JavaScript -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="order-totals mt-4">
+                            <div class="totals-row">
+                                <span>Subtotal:</span>
+                                <span id="orderSubtotal">$0.00</span>
+                            </div>
+                            <div class="totals-row">
+                                <span>Shipping:</span>
+                                <span id="orderShipping">Free</span>
+                            </div>
+                            <div class="totals-row">
+                                <span>Tax:</span>
+                                <span id="orderTax">$0.00</span>
+                            </div>
+                            <hr>
+                            <div class="totals-row total">
+                                <span><strong>Total:</strong></span>
+                                <span><strong id="orderTotal">$0.00</strong></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- What's Next -->
+                    <div class="next-steps-card mb-4">
+                        <h3>What Happens Next?</h3>
+                        <div class="steps-timeline">
+                            <div class="timeline-step">
+                                <div class="step-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="step-content">
+                                    <h5>Order Confirmation</h5>
+                                    <p>You'll receive an email confirmation shortly with your order details.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-step">
+                                <div class="step-icon">
+                                    <i class="fas fa-box"></i>
+                                </div>
+                                <div class="step-content">
+                                    <h5>Processing</h5>
+                                    <p>We'll prepare your items with care and quality checking.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-step">
+                                <div class="step-icon">
+                                    <i class="fas fa-shipping-fast"></i>
+                                </div>
+                                <div class="step-content">
+                                    <h5>Shipping</h5>
+                                    <p>Your order will be shipped and you'll receive tracking information.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-step">
+                                <div class="step-icon">
+                                    <i class="fas fa-home"></i>
+                                </div>
+                                <div class="step-content">
+                                    <h5>Delivery</h5>
+                                    <p>Enjoy your new kitchen essentials!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="action-buttons text-center">
+                        <a href="products.html" class="btn btn-primary btn-lg me-3">
+                            Continue Shopping
+                        </a>
+                        <button class="btn btn-outline-primary btn-lg" onclick="window.print()">
+                            <i class="fas fa-print me-2"></i>Print Receipt
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Section -->
+    <section class="support-section py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 text-center mb-4">
+                    <div class="support-item">
+                        <div class="support-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h5>Need Help?</h5>
+                        <p>Contact our customer service team if you have any questions about your order.</p>
+                        <a href="contact.html" class="btn btn-outline-primary">Contact Us</a>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center mb-4">
+                    <div class="support-item">
+                        <div class="support-icon">
+                            <i class="fas fa-truck"></i>
+                        </div>
+                        <h5>Track Your Order</h5>
+                        <p>You'll receive tracking information via email once your order ships.</p>
+                        <a href="#" class="btn btn-outline-primary">Track Order</a>
+                    </div>
+                </div>
+                <div class="col-md-4 text-center mb-4">
+                    <div class="support-item">
+                        <div class="support-icon">
+                            <i class="fas fa-undo"></i>
+                        </div>
+                        <h5>Returns & Exchanges</h5>
+                        <p>Easy returns within 30 days. View our return policy for more details.</p>
+                        <a href="faq.html" class="btn btn-outline-primary">Return Policy</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h3>Stay Connected</h3>
+                    <p>Be the first to know about new products, special offers, and kitchen tips!</p>
+                </div>
+                <div class="col-lg-6">
+                    <form class="newsletter-form">
+                        <div class="input-group">
+                            <input type="email" class="form-control" placeholder="Enter your email">
+                            <button class="btn btn-primary" type="submit">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="footer-widget">
+                        <h5>Utensalis For Life</h5>
+                        <p>Your trusted partner for premium kitchen utensils and cookware. Quality that lasts a lifetime.</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <div class="footer-widget">
+                        <h5>Quick Links</h5>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="products.html">Products</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <div class="footer-widget">
+                        <h5>Categories</h5>
+                        <ul class="footer-links">
+                            <li><a href="products.html?category=utensils">Kitchen Utensils</a></li>
+                            <li><a href="products.html?category=cookware">Steel Cookware</a></li>
+                            <li><a href="products.html?category=accessories">Accessories</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <div class="footer-widget">
+                        <h5>Support</h5>
+                        <ul class="footer-links">
+                            <li><a href="faq.html">FAQ</a></li>
+                            <li><a href="#">Shipping Info</a></li>
+                            <li><a href="#">Returns</a></li>
+                            <li><a href="#">Warranty</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <div class="footer-widget">
+                        <h5>Contact Info</h5>
+                        <ul class="footer-contact">
+                            <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                            <li><i class="fas fa-envelope"></i> info@utensilsforlife.com</li>
+                            <li><i class="fas fa-map-marker-alt"></i> 123 Kitchen St, Cookville</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="footer-bottom text-center">
+                <p>&copy; 2025 Utensalis For Life. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>
